@@ -4,7 +4,6 @@
 		
 
 (defun partition (split-list list-to-split)
-	(print "call")
 	(if (> (length list-to-split) 1)
 		(setq split-list (partition (cons (get2 list-to-split) 
 											split-list)
@@ -12,13 +11,9 @@
 							)
 		)
 	)
-	(print "A split")
-	(write split-list)
 	(if (= (length list-to-split) 1)
 		(setq split-list (cons list-to-split split-list))
 	)
-	(print "A =")
-	(write split-list)
 	split-list)
 
 
