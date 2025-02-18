@@ -1,11 +1,8 @@
 
 
 (defun addend (lst item)
+	;adds item to end of list
 	(append lst (cons item nil)))
-
-
-(defun insert (sortedlsta itemsToSort sortedlstb)
-
 
 
 (defun insert (sortedlsta itemsToSort sortedlstb)
@@ -33,4 +30,15 @@ sortedlsta)
 		(setq lst (insert nil (car lst) (insertion-sort (cdr lst))))
 	)
 lst)
+
+
+
+(print "Loading InsertionSort: Q4")
+(print "runing list (9 7 5 3 1 2 4 6 8)")
+(print "")
+(write (insertion-sort '(9 7 5 3 1 2 4 6 8)))
+
+
+
+
 

@@ -1,9 +1,11 @@
 
 (defun get2 (list-to-split)
+	;get first 2 eliments in list in there own list 
 	(cons (car list-to-split) (cons (cadr list-to-split) nil)))
-		
+
 
 (defun partition (split-list list-to-split)
+	;def to turn (# # # # #) into  ((# #)(# #)())
 	(if (> (length list-to-split) 1)
 		(setq split-list (partition (cons (get2 list-to-split) 
 											split-list)
@@ -31,20 +33,32 @@
 		)
     )
  )
+ 
+(defun listMergeDriver (partitiondList)
+	(if (> (length partitiondList) 0)
+		(setq partitiondList (mergeLists (mergeLists (list (caar partitiondList))
+													(cdar partitiondList))
+										(listMergeDriver (cdr partitiondList))
+								)
+		)
+	partitiondList)
+)
 
 
 (defun mergesort (list-to-sort)
 	(if (> (length list-to-sort) 1)
-		(multiple-value-bind (left right) (partition list-to-sort)
-        (mergeLists (mergesort left) (mergesort right))
-		)
+		(setq list-to-sort (listMergeDriver (partition nil 
+													list-to-sort)))
       
 	list-to-sort)
 )
 
 
 
-
+(print "Loading Mergesort_Bottom_Up: Q3")
+(print "runing list (9 7 5 3 1 2 4 6 8)")
+(print "")
+(write (mergesort '(9 7 5 3 1 2 4 6 8)))
 
 
 

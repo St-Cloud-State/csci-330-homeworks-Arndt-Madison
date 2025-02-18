@@ -36,7 +36,10 @@
 
 
 
-
+(print "Loading Mergesort_Recusive_Split: Q2")
+(print "runing list (9 7 5 3 1 2 4 6 8)")
+(print "")
+(write (mergesort '(9 7 5 3 1 2 4 6 8)))
 
 
 
