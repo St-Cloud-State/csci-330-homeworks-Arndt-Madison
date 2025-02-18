@@ -1,0 +1,59 @@
+Script started on 2025-02-18 02:05:26+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="122" LINES="8"]
+[0;32m@Arndt-Madison [0m➜ [1;34m/workspaces/csci-330-homeworks-Arndt-Madison [0;36m([1;31mmain[0;36m) [0m$ g++ HW3Q1.cpp -o HW3Q1.out
+[0;32m@Arndt-Madison [0m➜ [1;34m/workspaces/csci-330-homeworks-Arndt-Madison [0;36m([1;31mmain[0;36m) [0m$ ./HW3Q1.out
+5 7 23 32 34 62 
+[0;32m@Arndt-Madison [0m➜ [1;34m/workspaces/csci-330-homeworks-Arndt-Madison [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load "Mergesort_Recusive_Split.lsp")
+
+"Loading Mergesort_Recusive_Split: Q2" 
+"runing list (9 7 5 3 1 2 4 6 8)" 
+"" (1 2 3 4 5 6 7 8 9)
+T
+* (load "Mergesort_Bottom_Up.lsp")
+WARNING: redefining COMMON-LISP-USER::PARTITION in DEFUN
+WARNING: redefining COMMON-LISP-USER::MERGELISTS in DEFUN
+WARNING: redefining COMMON-LISP-USER::MERGESORT in DEFUN
+
+"Loading Mergesort_Bottom_Up: Q3" 
+"runing list (9 7 5 3 1 2 4 6 8)" 
+"" (1 2 3 4 5 6 7 8 9)
+T
+* (load "InsertionSort.lsp")
+
+; file: /workspaces/csci-330-homeworks-Arndt-Madison/InsertionSort.lsp
+; in: DEFUN INSERT
+;     (DEFUN INSERT (SORTEDLSTA ITEMSTOSORT SORTEDLSTB))
+; 
+; caught STYLE-WARNING:
+;   The variable SORTEDLSTA is defined but never used.
+; 
+; caught STYLE-WARNING:
+;   The variable ITEMSTOSORT is defined but never used.
+; 
+; caught STYLE-WARNING:
+;   The variable SORTEDLSTB is defined but never used.
+; 
+; compilation unit finished
+;   caught 3 STYLE-WARNING conditions
+
+"Loading InsertionSort: Q4" 
+"runing list (9 7 5 3 1 2 4 6 8)" 
+"" (1 2 3 4 5 6 7 8 9)
+T
+* ^Z
+[1]+  Stopped                 sbcl
+[0;32m@Arndt-Madison [1;31m➜ [1;34m/workspaces/csci-330-homeworks-Arndt-Madison [0;36m([1;31mmain[0;36m) [0m$ exit script
+exit
+There are stopped jobs.
+[0;32m@Arndt-Madison [1;31m➜ [1;34m/workspaces/csci-330-homeworks-Arndt-Madison [0;36m([1;31mmain[0;36m) [0m$ exit script
+exit
+bash: exit: script: numeric argument required
+
+Script done on 2025-02-18 02:06:54+00:00 [COMMAND_EXIT_CODE="2"]
