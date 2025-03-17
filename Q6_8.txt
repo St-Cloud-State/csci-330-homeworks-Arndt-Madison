@@ -1,0 +1,128 @@
+Script started on 2025-03-17 01:53:55+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="122" LINES="16"]
+[0;32m@Arndt-Madison [0m➜ [1;34m/workspaces/csci-330-homeworks-Arndt-Madison [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load HW5Q6     "HW5Q6.lsp")
+
+; file: /workspaces/csci-330-homeworks-Arndt-Madison/HW5Q6.lsp
+; in: DEFUN PARSE-I
+;     (PARSE-E (SUBSEQ INPUT-STR 1))
+; 
+; caught STYLE-WARNING:
+;   undefined function: PARSE-E
+
+;     (PARSE-S (SUBSEQ PARSE 1))
+; 
+; caught STYLE-WARNING:
+;   undefined function: PARSE-S
+; 
+; compilation unit finished
+;   Undefined functions:
+;     PARSE-E PARSE-S
+;   caught 2 STYLE-WARNING conditions
+
+; file: /workspaces/csci-330-homeworks-Arndt-Madison/HW5Q6.lsp
+; in: DEFUN PARSE-E-RECURSIVE
+;     (PARSE-G INPUT-STR)
+; 
+; caught STYLE-WARNING:
+;   undefined function: PARSE-G
+; 
+; compilation unit finished
+;   Undefined function:
+;     PARSE-G
+;   caught 1 STYLE-WARNING condition
+
+; file: /workspaces/csci-330-homeworks-Arndt-Madison/HW5Q6.lsp
+; in: DEFUN PARSE-E
+;     (PARSE-G (SUBSEQ PARSE 1))
+; 
+; caught STYLE-WARNING:
+;   undefined function: PARSE-G
+; 
+; compilation unit finished
+;   Undefined function:
+;     PARSE-G
+;   caught 1 STYLE-WARNING condition
+
+; file: /workspaces/csci-330-homeworks-Arndt-Madison/HW5Q6.lsp
+; in: DEFUN PARSE-S
+;     (PARSE-L (SUBSEQ INPUT-STR 1))
+; 
+; caught STYLE-WARNING:
+;   undefined function: PARSE-L
+; 
+; compilation unit finished
+;   Undefined function:
+;     PARSE-L
+;   caught 1 STYLE-WARNING condition
+
+; file: /workspaces/csci-330-homeworks-Arndt-Madison/HW5Q6.lsp
+; in: DEFUN PARSE-L
+;     (MULTIPLE-VALUE-BIND (PARSE RESULT)
+;         (PARSE-L (SUBSEQ INPUT-STR 1))
+;       (VALUES PARSE T))
+; --> MULTIPLE-VALUE-CALL 
+; ==>
+;   #'(LAMBDA (&OPTIONAL (PARSE) (RESULT) &REST #:G0)
+;       (DECLARE (IGNORE #:G0))
+;       (VALUES PARSE T))
+; 
+; caught STYLE-WARNING:
+;   The variable RESULT is defined but never used.
+; 
+; compilation unit finished
+;   caught 1 STYLE-WARNING condition
+Loading HW5Q6: Q6
+Testing Valid strs
+testing ixoys
+
+
+testing izowdsb
+
+
+testing izoydsssb
+
+
+testing ixowses
+
+
+testing izoydssbedsb
+
+
+testing iozses
+
+
+testing iozdssbes
+
+
+Testing Invalid strs
+testing ixoyc
+S parse error
+
+testing iysdbs
+o is not after a G terminator
+
+testing izwdb
+o is not after a G terminator
+
+testing iwxos
+G terminator not foud after o
+
+testing ixsdls
+o is not after a G terminator
+
+testing iysowzdl
+o is not after a G terminator
+
+testing izwowsdsbsowx
+I parsing Error
+
+T
+* ^Z
+[1]+  Stopped                 sbcl
